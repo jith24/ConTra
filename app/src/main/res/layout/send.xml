@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,13 +9,50 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal">
 
-        <TextView
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColorLink="@android:color/holo_blue_dark" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="text"
+            android:textColorLink="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/Submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="SEND INFO"
-            android:id="@+id/textView2"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_below="@+id/phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:onClick="clk"
+            android:text="Submit" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Submit"
+            android:layout_alignRight="@+id/Submit"
+            android:layout_below="@+id/Submit"
+            android:layout_marginTop="106dp"
+            app:srcCompat="@android:drawable/dialog_holo_dark_frame" />
+
     </RelativeLayout>
 </LinearLayout>

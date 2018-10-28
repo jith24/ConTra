@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#eeeeee">
+    android:background="#232F34"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,6 +22,7 @@
             android:layout_marginTop="42dp"
             android:layout_marginBottom="42dp"
             android:onClick="clk"
+            android:textColor="@drawable/submit_button_text"
             android:text="Submit"
             android:background="@drawable/button_custom"/>
 
@@ -32,6 +34,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:textAlignment="textStart"
+            android:textColor="@drawable/things_custom_text"
             android:gravity="start"
             android:layout_marginTop="51dp"
             android:background="@drawable/things_custom"
@@ -53,6 +56,7 @@
             android:layout_height="70dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:textColor="@drawable/things_custom_text"
             android:textAlignment="textStart"
             android:gravity="start"
             android:layout_below="@+id/tb_name_send"
@@ -72,6 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_alignParentLeft="true"
+            android:textColor="@drawable/things_custom_text"
             android:layout_alignParentStart="true"
             android:textAlignment="textStart"
             android:gravity="start"
@@ -92,6 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_alignParentLeft="true"
+            android:textColor="@drawable/things_custom_text"
             android:layout_alignParentStart="true"
             android:textAlignment="textStart"
             android:gravity="start"
@@ -103,7 +109,7 @@
             android:paddingTop="25dp"
             android:paddingLeft="20dp"
             android:textAllCaps="false"
-            android:checked="true"
+            android:checked="false"
             />
 
         <ToggleButton
@@ -111,6 +117,7 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:textColor="@drawable/things_custom_text"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:textAlignment="textStart"
@@ -123,12 +130,13 @@
             android:paddingTop="25dp"
             android:paddingLeft="20dp"
             android:textAllCaps="false"
-            android:checked="true"
+            android:checked="false"
             />
 
         <ToggleButton
             android:id="@+id/tb_twitter_send"
             style="?android:attr/borderlessButtonStyle"
+            android:textColor="@drawable/things_custom_text"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_alignParentLeft="true"
@@ -143,7 +151,7 @@
             android:paddingTop="25dp"
             android:paddingLeft="20dp"
             android:textAllCaps="false"
-            android:checked="true"
+            android:checked="false"
             />
 
         <ToggleButton
@@ -151,6 +159,7 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:textColor="@drawable/things_custom_text"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:textAlignment="textStart"
@@ -163,7 +172,7 @@
             android:paddingTop="25dp"
             android:paddingLeft="20dp"
             android:textAllCaps="false"
-            android:checked="true"
+            android:checked="false"
             />
 
         <ToggleButton
@@ -171,6 +180,7 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:textColor="@drawable/things_custom_text"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:textAlignment="textStart"
@@ -183,7 +193,7 @@
             android:paddingTop="25dp"
             android:paddingLeft="20dp"
             android:textAllCaps="false"
-            android:checked="true"
+            android:checked="false"
             />
 
         <ToggleButton
@@ -193,6 +203,7 @@
             android:layout_height="70dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:textColor="@drawable/things_custom_text"
             android:textAlignment="textStart"
             android:gravity="start"
             android:focusable="false"
@@ -203,7 +214,7 @@
             android:paddingTop="25dp"
             android:paddingLeft="20dp"
             android:textAllCaps="false"
-            android:checked="true"
+            android:checked="false"
             />
 
         <ToggleButton
@@ -211,6 +222,8 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:textColor="@drawable/things_custom_text"
+            android:textColorHighlight="#232F34"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:textAlignment="textStart"
@@ -223,7 +236,7 @@
             android:paddingTop="25dp"
             android:paddingLeft="20dp"
             android:textAllCaps="false"
-            android:checked="true"
+            android:checked="false"
             />
 
         <TextView
@@ -232,6 +245,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:textColor="#F9AA33"
             android:layout_marginTop="18dp"
             android:text="Choose"
             android:textSize="20dp"/>

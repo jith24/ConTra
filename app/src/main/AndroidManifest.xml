@@ -30,7 +30,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Receive" android:screenOrientation="portrait">
+        <activity android:name=".Receive" android:screenOrientation="portrait"
+            android:parentActivityName="com.example.abhijith.contactapp.MainActivity" >
             <intent-filter>
                 <action android:name="com.contactapp.jith.RECEIVE"
                     />
@@ -38,21 +39,24 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Send" android:screenOrientation="portrait">
+        <activity android:name=".Send" android:screenOrientation="portrait"
+            android:parentActivityName="com.example.abhijith.contactapp.MainActivity" >
             <intent-filter>
                 <action android:name="com.contactapp.jith.SEND" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Settings" android:screenOrientation="portrait">
+        <activity android:name=".Settings" android:screenOrientation="portrait"
+            android:parentActivityName="com.example.abhijith.contactapp.MainActivity">
             <intent-filter>
                 <action android:name="com.contactapp.jith.SETTINGS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".SendFinal" android:screenOrientation="portrait">
+        <activity android:name=".SendFinal" android:screenOrientation="portrait"
+            android:parentActivityName="com.example.abhijith.contactapp.Send" >
             <intent-filter>
                 <action android:name="com.contactapp.jith.SENDFINAL" />
 

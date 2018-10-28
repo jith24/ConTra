@@ -4,5 +4,4 @@
         android:state_pressed="true" />
     <item android:drawable="@drawable/things"
         android:state_focused="true" />
-    <item android:drawable="@drawable/things_receive" />
 </selector>

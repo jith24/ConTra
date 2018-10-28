@@ -1,11 +1,14 @@
 package com.example.abhijith.contactapp;
 
 import android.Manifest;
+import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
 import android.provider.MediaStore;
+import android.renderscript.ScriptGroup;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -79,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
 //       settings.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -88,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
     }
+
 
 
     @Override

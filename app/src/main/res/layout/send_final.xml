@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.abhijith.contactapp.SendFinal"
-    android:background="#e0e0e0">
+    android:background="#232F34"
+    >
 
     <ImageView
         android:id="@+id/imageView2"
@@ -26,6 +27,7 @@
         android:layout_height="wrap_content"
         android:text="Scan"
         android:textSize="20dp"
+        android:textColor="#F9AA33"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />

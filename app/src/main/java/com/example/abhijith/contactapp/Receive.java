@@ -67,8 +67,7 @@ public class Receive extends Activity{
             //if qrcode has nothing in it
             if (result.getContents() == null) {
                 Toast.makeText(this, "Result Not Found", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent("com.contactapp.jith.MAIN");
-                startActivity(intent);
+              finish();
             } else {
 
                 String r=result.getContents();

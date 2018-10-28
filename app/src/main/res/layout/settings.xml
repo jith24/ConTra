@@ -2,12 +2,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#eeeeee">
+    android:background="#232F34"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="right">
+        android:layout_gravity="right"
+        >
 
 
         <TextView
@@ -17,7 +19,9 @@
             android:layout_above="@+id/tv_phone_settings"
             android:layout_alignLeft="@+id/tv_phone_settings"
             android:layout_alignStart="@+id/tv_phone_settings"
-            android:text="Name" />
+            android:textColor="#F9AA33"
+            android:text="Name"
+            />
 
         <EditText
             android:id="@+id/et_name_settings"
@@ -30,7 +34,9 @@
             android:layout_toEndOf="@+id/tv_phone_settings"
             android:layout_toRightOf="@+id/tv_phone_settings"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#F9AA33"
+            />
 
         <TextView
             android:id="@+id/tv_email_settings"
@@ -39,7 +45,9 @@
             android:layout_alignBottom="@+id/et_email_settings"
             android:layout_toLeftOf="@+id/button3"
             android:layout_toStartOf="@+id/button3"
-            android:text="Email" />
+            android:text="Email"
+            android:textColor="#F9AA33"
+            />
 
         <TextView
             android:id="@+id/tv_website_settings"
@@ -48,7 +56,9 @@
             android:layout_alignBottom="@+id/et_website_settings"
             android:layout_toLeftOf="@+id/button3"
             android:layout_toStartOf="@+id/button3"
-            android:text="Website" />
+            android:text="Website"
+            android:textColor="#F9AA33"
+            />
 
         <TextView
             android:id="@+id/tv_instagram_settings"
@@ -57,6 +67,8 @@
             android:layout_alignBottom="@+id/et_instagram_settings"
             android:layout_toLeftOf="@+id/button3"
             android:layout_toStartOf="@+id/button3"
+            android:textColor="#F9AA33"
+
             android:text="Instagram" />
 
         <TextView
@@ -66,6 +78,7 @@
             android:layout_alignBottom="@+id/et_linkedin_settings"
             android:layout_toLeftOf="@+id/button3"
             android:layout_toStartOf="@+id/button3"
+            android:textColor="#F9AA33"
             android:text="LinkedIN" />
 
         <TextView
@@ -75,6 +88,7 @@
             android:layout_alignBottom="@+id/et_facebook_settings"
             android:layout_toLeftOf="@+id/button3"
             android:layout_toStartOf="@+id/button3"
+            android:textColor="#F9AA33"
             android:text="Facebook" />
 
         <TextView
@@ -84,6 +98,7 @@
             android:layout_alignBottom="@+id/et_github_settings"
             android:layout_toLeftOf="@+id/button3"
             android:layout_toStartOf="@+id/button3"
+            android:textColor="#F9AA33"
             android:text="GitHub" />
 
         <TextView
@@ -93,6 +108,7 @@
             android:layout_alignBottom="@+id/et_snapchat_settings"
             android:layout_toLeftOf="@+id/button3"
             android:layout_toStartOf="@+id/button3"
+            android:textColor="#F9AA33"
             android:text="Snapchat" />
 
 
@@ -104,6 +120,7 @@
             android:layout_alignBottom="@+id/et_twitter_settings"
             android:layout_toLeftOf="@+id/button3"
             android:layout_toStartOf="@+id/button3"
+            android:textColor="#F9AA33"
             android:text="Twitter" />
 
 
@@ -116,6 +133,7 @@
             android:layout_alignStart="@+id/tv_email_settings"
             android:layout_below="@+id/et_name_settings"
             android:layout_marginTop="48dp"
+            android:textColor="#F9AA33"
             android:text="Phone" />
 
 
@@ -129,6 +147,7 @@
             android:layout_below="@+id/et_phone_settings"
             android:layout_marginTop="23dp"
             android:ems="10"
+            android:textColor="#F9AA33"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -140,6 +159,7 @@
             android:layout_below="@+id/et_linkedin_settings"
             android:layout_marginTop="23dp"
             android:ems="10"
+            android:textColor="#F9AA33"
             android:inputType="textUri" />
 
         <EditText
@@ -151,6 +171,7 @@
             android:layout_below="@+id/et_email_settings"
             android:layout_marginTop="23dp"
             android:ems="10"
+            android:textColor="#F9AA33"
             android:inputType="textUri" />
 
         <EditText
@@ -162,6 +183,7 @@
             android:layout_below="@+id/et_snapchat_settings"
             android:layout_marginTop="23dp"
             android:ems="10"
+            android:textColor="#F9AA33"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -173,6 +195,7 @@
             android:layout_below="@+id/et_facebook_settings"
             android:layout_marginTop="23dp"
             android:ems="10"
+            android:textColor="#F9AA33"
             android:inputType="textEmailAddress" />
         <EditText
             android:id="@+id/et_facebook_settings"
@@ -183,6 +206,7 @@
             android:layout_below="@+id/et_instagram_settings"
             android:layout_marginTop="23dp"
             android:ems="10"
+            android:textColor="#F9AA33"
             android:inputType="textEmailAddress" />
 
 
@@ -194,6 +218,7 @@
             android:layout_alignStart="@+id/et_website_settings"
             android:layout_below="@+id/et_website_settings"
             android:layout_marginTop="23dp"
+            android:textColor="#F9AA33"
             android:ems="10"
             android:inputType="textEmailAddress" />
 
@@ -204,6 +229,7 @@
             android:layout_alignLeft="@+id/et_twitter_settings"
             android:layout_alignStart="@+id/et_twitter_settings"
             android:layout_below="@+id/et_twitter_settings"
+            android:textColor="#F9AA33"
             android:layout_marginTop="23dp"
             android:ems="10"
             android:inputType="textEmailAddress" />
@@ -215,6 +241,7 @@
             android:layout_alignBottom="@+id/tv_phone_settings"
             android:layout_alignLeft="@+id/et_name_settings"
             android:layout_alignStart="@+id/et_name_settings"
+            android:textColor="#F9AA33"
             android:ems="10"
             android:inputType="phone" />
 
@@ -226,6 +253,7 @@
             android:layout_marginBottom="80dp"
             android:layout_width="200dp"
             android:layout_height="40dp"
+            android:textColor="@drawable/submit_button_text"
             android:background="@drawable/button_custom"
             android:text="Submit" />
 
@@ -236,6 +264,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
+            android:textColor="#F9AA33"
             android:textSize="20dp"
             android:text="Edit Details" />
 

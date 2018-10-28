@@ -1,13 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="right">
 
+
+        <TextView
+            android:id="@+id/tv_name_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_phone_settings"
+            android:layout_alignLeft="@+id/tv_phone_settings"
+            android:layout_alignStart="@+id/tv_phone_settings"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/et_name_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_editdetails_settings"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@+id/tv_phone_settings"
+            android:layout_toRightOf="@+id/tv_phone_settings"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv_email_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_email_settings"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/tv_website_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_website_settings"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:text="Website" />
+
+        <TextView
+            android:id="@+id/tv_instagram_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_instagram_settings"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:text="Instagram" />
+
+        <TextView
+            android:id="@+id/tv_linkedin_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_linkedin_settings"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:text="LinkedIN" />
+
+        <TextView
+            android:id="@+id/tv_facebook_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_facebook_settings"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:text="Facebook" />
+
+        <TextView
+            android:id="@+id/tv_github_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_github_settings"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:text="GitHub" />
+
+        <TextView
+            android:id="@+id/tv_snapchat_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_snapchat_settings"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:text="Snapchat" />
+
+
+
+        <TextView
+            android:id="@+id/tv_twitter_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_twitter_settings"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:text="Twitter" />
+
+
+
+        <TextView
+            android:id="@+id/tv_phone_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_email_settings"
+            android:layout_alignStart="@+id/tv_email_settings"
+            android:layout_below="@+id/et_name_settings"
+            android:layout_marginTop="48dp"
+            android:text="Phone" />
+
+
+
+        <EditText
+            android:id="@+id/et_email_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_phone_settings"
+            android:layout_alignStart="@+id/et_phone_settings"
+            android:layout_below="@+id/et_phone_settings"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/et_website_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_linkedin_settings"
+            android:layout_alignStart="@+id/et_linkedin_settings"
+            android:layout_below="@+id/et_linkedin_settings"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textUri" />
+
+        <EditText
+            android:id="@+id/et_instagram_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_email_settings"
+            android:layout_alignStart="@+id/et_email_settings"
+            android:layout_below="@+id/et_email_settings"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textUri" />
+
+        <EditText
+            android:id="@+id/et_linkedin_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_snapchat_settings"
+            android:layout_alignStart="@+id/et_snapchat_settings"
+            android:layout_below="@+id/et_snapchat_settings"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/et_twitter_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_facebook_settings"
+            android:layout_alignStart="@+id/et_facebook_settings"
+            android:layout_below="@+id/et_facebook_settings"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/et_facebook_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_instagram_settings"
+            android:layout_alignStart="@+id/et_instagram_settings"
+            android:layout_below="@+id/et_instagram_settings"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:id="@+id/et_github_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_website_settings"
+            android:layout_alignStart="@+id/et_website_settings"
+            android:layout_below="@+id/et_website_settings"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/et_snapchat_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_twitter_settings"
+            android:layout_alignStart="@+id/et_twitter_settings"
+            android:layout_below="@+id/et_twitter_settings"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/et_phone_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_phone_settings"
+            android:layout_alignLeft="@+id/et_name_settings"
+            android:layout_alignStart="@+id/et_name_settings"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_below="@+id/et_github_settings"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_custom"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/tv_editdetails_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:textSize="20dp"
+            android:text="Edit Details" />
+
+
+
     </RelativeLayout>
 
-</LinearLayout>
+</ScrollView>

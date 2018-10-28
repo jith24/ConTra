@@ -1,20 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#eeeeee">
 
-    <TextView
-        android:id="@+id/textViewName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.10"
-        android:text="TextView" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textViewAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.11"
-        android:text="TextView" />
-</LinearLayout>
+            <Button
+                android:id="@+id/b_name_receive"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:layout_marginTop="51dp"
+                android:background="@drawable/things_custom_receive"
+                android:paddingTop="25dp"
+                android:paddingLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/b_phone_receive"
+                android:layout_alignLeft="@+id/b_name_receive"
+                android:layout_alignStart="@+id/b_name_receive"
+                android:layout_below="@+id/b_name_receive"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:background="@drawable/things_custom_receive"
+                android:paddingTop="25dp"
+                android:paddingLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/b_email_receive"
+                android:layout_alignLeft="@+id/b_phone_receive"
+                android:layout_alignStart="@+id/b_phone_receive"
+                android:layout_below="@+id/b_phone_receive"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:background="@drawable/things_custom_receive"
+                android:paddingTop="25dp"
+                android:paddingLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/b_instagram_receive"
+                android:layout_alignLeft="@+id/b_phone_receive"
+                android:layout_alignStart="@+id/b_phone_receive"
+                android:layout_below="@+id/b_email_receive"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:background="@drawable/things_custom_receive"
+                android:paddingTop="25dp"
+                android:paddingLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/b_facebook_receive"
+                android:layout_alignLeft="@+id/b_phone_receive"
+                android:layout_alignStart="@+id/b_phone_receive"
+                android:layout_below="@+id/b_instagram_receive"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:background="@drawable/things_custom_receive"
+                android:paddingTop="25dp"
+                android:paddingLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/b_snapchat_receive"
+                android:layout_alignLeft="@+id/b_phone_receive"
+                android:layout_alignStart="@+id/b_phone_receive"
+                android:layout_below="@+id/b_twitter_receive"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:background="@drawable/things_custom_receive"
+                android:paddingTop="25dp"
+                android:paddingLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/b_linkedin_receive"
+                android:layout_alignLeft="@+id/b_phone_receive"
+                android:layout_alignStart="@+id/b_phone_receive"
+                android:layout_below="@+id/b_snapchat_receive"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:background="@drawable/things_custom_receive"
+                android:paddingTop="25dp"
+                android:paddingLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/b_github_receive"
+                android:layout_alignLeft="@+id/b_phone_receive"
+                android:layout_alignStart="@+id/b_phone_receive"
+                android:layout_below="@+id/b_website_receive"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:background="@drawable/things_custom_receive"
+                android:paddingTop="25dp"
+                android:paddingLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/b_website_receive"
+                android:layout_alignLeft="@+id/b_phone_receive"
+                android:layout_alignStart="@+id/b_phone_receive"
+                android:layout_below="@+id/b_linkedin_receive"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:background="@drawable/things_custom_receive"
+                android:paddingTop="25dp"
+                android:paddingLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/b_twitter_receive"
+                android:layout_alignLeft="@+id/b_phone_receive"
+                android:layout_alignStart="@+id/b_phone_receive"
+                android:layout_below="@+id/b_facebook_receive"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:background="@drawable/things_custom_receive"
+                android:paddingTop="25dp"
+                android:paddingLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:text="Received Details"
+                android:textSize="20dp"/>
+
+
+        </RelativeLayout>
+
+
+
+</ScrollView>

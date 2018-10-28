@@ -1,58 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:roid="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal">
 
-        <EditText
-            android:id="@+id/editText"
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tb_github_send"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:onClick="clk"
+            android:text="Submit"
+            android:background="@drawable/button_custom"/>
+
+        <ToggleButton
+            android:id="@+id/tb_name_send"
             android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/things_custom"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textAllCaps="false"
+            android:checked="true"
+
+
+            />
+
+        <ToggleButton
+            android:id="@+id/tb_phone_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:layout_below="@+id/tb_name_send"
+            android:background="@drawable/things_custom"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="11dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textAllCaps="false"
+            android:checked="true"
+             />
+
+        <ToggleButton
+            android:id="@+id/tb_email_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/tb_phone_send"
+            android:background="@drawable/things_custom"
+            android:layout_marginTop="11dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            android:textAllCaps="false"
+            android:checked="true"
+            />
+
+        <ToggleButton
+            android:id="@+id/tb_instagram_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/tb_email_send"
+            android:background="@drawable/things_custom"
+            android:layout_marginTop="11dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            android:textAllCaps="false"
+            android:checked="true"
+            />
+
+        <ToggleButton
+            android:id="@+id/tb_facebook_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/tb_instagram_send"
+            android:background="@drawable/things_custom"
+            android:layout_marginTop="11dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            android:textAllCaps="false"
+            android:checked="true"
+            />
+
+        <ToggleButton
+            android:id="@+id/tb_twitter_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/tb_facebook_send"
+            android:background="@drawable/things_custom"
+            android:layout_marginTop="11dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            android:textAllCaps="false"
+            android:checked="true"
+            />
+
+        <ToggleButton
+            android:id="@+id/tb_snapchat_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/tb_twitter_send"
+            android:background="@drawable/things_custom"
+            android:layout_marginTop="11dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            android:textAllCaps="false"
+            android:checked="true"
+            />
+
+        <ToggleButton
+            android:id="@+id/tb_linkedin_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/tb_snapchat_send"
+            android:background="@drawable/things_custom"
+            android:layout_marginTop="11dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            android:textAllCaps="false"
+            android:checked="true"
+            />
+
+        <ToggleButton
+            android:id="@+id/tb_website_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/tb_linkedin_send"
+            android:background="@drawable/things_custom"
+            android:layout_marginTop="11dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            android:textAllCaps="false"
+            android:checked="true"
+            />
+
+        <ToggleButton
+            android:id="@+id/tb_github_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/tb_website_send"
+            android:background="@drawable/things_custom"
+            android:layout_marginTop="11dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            android:textAllCaps="false"
+            android:checked="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_choose_send"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="26dp"
-            android:ems="10"
-            android:hint="Name"
-            android:inputType="textPersonName"
-            android:textColorLink="@android:color/holo_blue_dark" />
+            android:layout_marginTop="18dp"
+            android:text="Choose"
+            android:textSize="20dp"/>
 
-        <EditText
-            android:id="@+id/phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/editText"
-            android:layout_alignStart="@+id/editText"
-            android:layout_below="@+id/editText"
-            android:layout_marginTop="32dp"
-            android:ems="10"
-            android:hint="Phone Number"
-            android:inputType="text"
-            android:textColorLink="@android:color/holo_blue_dark" />
-
-        <Button
-            android:id="@+id/Submit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/phone"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="38dp"
-            android:onClick="clk"
-            android:text="Submit" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/Submit"
-            android:layout_alignRight="@+id/Submit"
-            android:layout_below="@+id/Submit"
-            android:layout_marginTop="106dp"
-            app:srcCompat="@android:drawable/dialog_holo_dark_frame" />
 
     </RelativeLayout>
-</LinearLayout>
+</ScrollView>

@@ -19,6 +19,7 @@
             android:layout_below="@+id/tb_github_send"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="42dp"
+            android:layout_marginBottom="42dp"
             android:onClick="clk"
             android:text="Submit"
             android:background="@drawable/button_custom"/>

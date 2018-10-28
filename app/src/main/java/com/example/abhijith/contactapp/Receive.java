@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 
 
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -71,6 +72,8 @@ public class Receive extends Activity{
             } else {
 
                 String r=result.getContents();
+
+
                 String contra_name="";
                 String contra_phone="";
                 String contra_email="";
@@ -191,10 +194,7 @@ public class Receive extends Activity{
                     copy_linkedin=contra_linkedin;
                 }
 
-
-
-
-
+                //DatabaseHandler db = new DatabaseHandler(this);
 
 
 

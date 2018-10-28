@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">contactapp</string>
+    <string name="app_name">ConTra</string>
     <string name="send">Send</string>
     <string name="receive">Receive</string>
     <string name="settings">Settings</string>
